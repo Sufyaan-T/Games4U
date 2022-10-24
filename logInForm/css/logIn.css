@@ -13,7 +13,7 @@ body{
     --colorPrimary: #a800aa;
     --colorPrimaryDark: #420142 ;
     --colorSecondary:#000000;
-    --colorError: #cc3333;
+    --colorError: #ba0000;
     --colorSuccess: #4bb544;
     --border-radius: 4px;
     margin: 0;
@@ -88,9 +88,12 @@ body{
     background: #ffffff;
 }
 
-.formInputError{
+.formInputErrorMessage{
     color: var(--colorError);
     border-color: var(--colorError);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 .formButton{

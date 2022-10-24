@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Log In / Sign Up</title>
+        <title>Log In</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/logIn.css">        
     </head>
@@ -9,7 +9,7 @@
     <body>
         <script src="./logIn.js"></script>
         <div class="container">
-            <form class="formHidden" id="login">
+            <form class="form" id="login">
 
                 <h1  class="formTitle">Login</h1>
                 <div class="formMessage formMessageError"></div>
@@ -34,30 +34,29 @@
                 </p>
             </form>
 
-            <form class="form" id="createAccount">
-
+            <form class="formHidden" id="createAccount">
                 <h1  class="formTitle">Create Account</h1>
                 <div class="formMessage formMessageError"></div>
 
                 <div class="formInputGroup"> 
-                    <input type="text" class="formInput" placeholder="Full Name" autofocus>
+                    <input type="text" id="signupFullName" class="formInput" placeholder="Full Name" autofocus>
                     <div class="formInputErrorMessage"></div>
                 </div>
 
                 <div class="formInputGroup">
-                    <input type="text" class="formInput" placeholder="Email Address" autofocus>
+                    <input type="email" class="formInput" placeholder="Email Address" autofocus>
                     <div class="formInputErrorMessage"></div>
                 </div>
                 
                 <div class="formInputGroup"> 
-                    <input type="password" class="formInput" placeholder="Password" autofocus>
+                    <input type="password" id="signupPassword"class="formInput" placeholder="Password" autofocus>
                     <div class="formInputErrorMessage"></div>
                 </div>
                 
                 <button class="formButton" type="Submit">Submit</button>
 
                 <p class="formText">
-                    <a  class="formLink" id="linkLogIn">Already Have An Account?</a>
+                    <a  class="formLink" id="linkLogIn">Already Have An Account? Sign In</a>
                 </p>
             </form>
         </div>
